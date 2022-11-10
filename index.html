@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <style>
+    /* *{
+        font-family:  sans-serif;
+       
+    } */
     #navbar{
         height: 80px;
         /* border: 1px solid red; */
@@ -145,8 +149,8 @@
         
     }
     .text1>h1{
-        font-size: 40px;
-        font-weight: 70px;
+        font-size: 35px;
+        font-weight: 60px;
 
 
     }
@@ -366,8 +370,11 @@
     .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99.5%;
   z-index:1;
+}
+a{
+    text-decoration: none;
 }
 
       
@@ -390,8 +397,14 @@
 
     <div class="but">
         <button>Contact Sales</button>
-        <button>Sign up for free</button>
-        <h5>Sign in</h5>
+        <button class="signupbtn"><a href="signup.html" style="color: #ffffff">Sign up for free</a></button>
+        <button style="color: white;  height: px;
+        border-radius: 10px;
+        border: 0px;
+       
+      
+        font-size: medium;
+        font-weight: bold;background-color: rgb(8,43,42)"  > <a href="signin.html" style="color: white"; class="signinbtn"> </a></button>
     </div>
    </div>
 </header>
@@ -401,8 +414,8 @@
 
     <div class="text">
         <h1>Build apps that connect everything </h1>
-        <button>Sign up for free</button>
-        <h5>or <a href="contact sales.html" style="color: white;"> Contact sales </a></h5>
+        <button class="signupbtn" ><a href="signup.html" style="color: white">Sign up for free</a></button>
+        <h5> <a href="contact sales.html" style="color: white;">  or Contact sales </a></h5>
 
     </div>
 
@@ -517,7 +530,7 @@
         <h1>Join them.</h1>
     </div>
     <div  class="btm1"> 
-        <button>Sign up for free</button>
+        <button><a href="signup.html" style="color: white">Sign up for free</a></button>
         <p>No credit card needed</p>
     </div>
 </div>
@@ -619,24 +632,48 @@
 </body>
 </html>
 <script>
+
     window.onload=function(){
-        document.getElementById("autoplay").play()
+    let token=localStorage.getItem("token")||null
+    if(token){
+        document.querySelector(".signinbtn").innerText="Sign out"
+
+    }else{
+        document.querySelector(".signinbtn").innerText="Sign in"
     }
+    document.getElementById("autoplay").play()
+}
 
-//     window.onscroll = function() {myFunction()};
+    //   let signup=  document.querySelector(".signupbtn").value
+    //    let signin= document.querySelector(".signinbtn")
+    //    console.log(signin)
 
-// // Get the navbar
-// var navbar = document.getElementsById("navbar");
-
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
+// let token1=localStorage.getItem("token1")||null
+// if(token1){
+//     document.querySelector(".signupbtn").innerText=""
+// }else{
+//     document.querySelector(".signinbtn").innerText="Sign up for free"
 // }
+
+
+        
+//         function logout(){
+
+       
+//         let token1=localStorage.getItem("token1")||null
+// if(token1){
+//     document.querySelector(".signupbtn").innerText=""
+// }else{
+//     document.querySelector(".signinbtn").innerText="Sign up for free"
+// }
+//         }
+
+
+    
+    
+//     localStorage.removeItem("token")
+
+
+
+
 </script>
