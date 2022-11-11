@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bases</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    #navbar {
+      height: 80px;
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      color: black;
+      font-family: sans-serif;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    #navbar:hover {
+      background-color: cadetblue;
+    }
+    #navbar > :nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+
+      height: 40px;
+      align-items: center;
+      width: 700px;
+      font-size: larger;
+      font-weight: bolder;
+    }
+    /* .nav>div>:nth-child(2){
+        font-size: 25px;
+    } */
+    #navbar:hover > h5 {
+      background-color: blue;
+    }
+    .but {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      width: 340px;
+
+      align-items: center;
+      padding-right: 20px;
+      font-size: large;
+      font-family: sans-serif;
+    }
+    .but > button {
+      height: 35px;
+      border-radius: 10px;
+      border: 0px;
+
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .but > :nth-child(3) {
+      font-size: large;
+      font-weight: bolder;
+    }
+    .btn {
+      border: none;
+      background-color: lightgray;
+      color: grey;
+      padding: 9px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .bottom {
+      margin-top: 60px;
+
+      display: flex;
+      justify-content: space-evenly;
+      /* flex-direction: column; */
+    }
+    .bott1 {
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    /* .sticky > .bot1 {
+      position: fixed;
+      top: 0;
+      width: 99.5%;
+      z-index: 1;
+    } */
+    .bott1 > input {
+      height: 25px;
+      width: 200px;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+    .scrollbar {
+      height: 550px;
+      width: 250px;
+
+      overflow: auto;
+      font-size: 14px;
+    }
+    .bot {
+      margin-left: 50px;
+    }
+    .left {
+      padding-right: 50px;
+    }
+  </style>
+  <body>
+    <header class="header sticky">
+      <!-- navbar -->
+      <div id="navbar">
+        <div>
+          <img width="60px" src="" />
+          <h5 style="font-size: 25px">Airtable</h5>
+          <h5>Product ></h5>
+          <h5>Solution ></h5>
+          <h5>Pricing</h5>
+
+          <h5>Entreprise ></h5>
+          <h5>Resourses ></h5>
+        </div>
+
+        <div class="but">
+          <button>Contact Sales</button>
+          <button class="signupbtn">Bases</button>
+          <button
+            class="signinbtn"
+            style="
+              color: white;
+              height: 40px;
+              border-radius: 10px;
+              border: 0px;
+              width: 80px;
+              font-size: medium;
+              font-weight: bold;
+              background-color: rgb(8, 43, 42);
+            "
+          >
+            Sign out
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ..............bottompart......... -->
+    <div class="bottom">
+      <div class="bot">
+        <div class="bott1">
+          <button class="btn"><i class="fa fa-home"></i></button>
+          <input type="text" placeholder="search" />
+        </div>
+
+        <div class="scrollbar">
+          <p>Category</p>
+          <p>Content production</p>
+          <p>Featured</p>
+          <p>Creative</p>
+          <p>Event Planning</p>
+          <p>Everyday Life</p>
+          <p>HR & Recruiting</p>
+          <p>Legal</p>
+          <p>Local Business</p>
+          <p>Marketing</p>
+          <p>Nonprofit</p>
+          <p>Personal</p>
+          <p>Publishing></p>
+          <p>Real Estate</p>
+          <p>Remote work</p>
+          <p>Startup</p>
+          <p>PR & Communications</p>
+          <p>Product, design, and UX</p>
+          <p>Venture Capital</p>
+          <p>Sales & Customers</p>
+          <p>Software Development</p>
+        </div>
+      </div>
+
+      <div class="left">
+        <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/image1.png" />
+      </div>
+      <div class="left1">
+        <h3>Content production &#8594
+        </h3>
+        <img src=""/>
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
