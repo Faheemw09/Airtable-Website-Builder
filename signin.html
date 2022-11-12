@@ -166,13 +166,13 @@
 
     let em1 = document.querySelector("#email").value.trim();
     let pas1 = document.querySelector("#pass").value.trim();
-   let  flag=false
+    let flag = false;
     if (em1 && pas1) {
       logArr.forEach(function (ele) {
         if (ele.em == em1 && ele.pas == pas1) {
-            localStorage.setItem("token","loggedin")
+          localStorage.setItem("token", "loggedin");
           alert("login sucessfull");
-   flag=true
+          flag = true;
           window.location.href = "index.html";
         }
       });
@@ -182,6 +182,4 @@
       alert("email & Password required");
     }
   }
-
-  
 </script>

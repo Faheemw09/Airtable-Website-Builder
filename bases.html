@@ -80,7 +80,9 @@
       border-radius: 5px;
     }
     .bottom {
-      margin-top: 60px;
+      margin-left: 230px;
+      margin-top: 120px;
+      width: 80%;
 
       display: flex;
       justify-content: space-evenly;
@@ -89,6 +91,7 @@
     .bott1 {
       margin-bottom: 10px;
       align-items: center;
+      position: sticky;
     }
     /* .sticky > .bot1 {
       position: fixed;
@@ -103,17 +106,69 @@
       border-radius: 10px;
     }
     .scrollbar {
-      height: 550px;
+      height: 600px;
       width: 250px;
 
       overflow: auto;
       font-size: 14px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      display: block;
+      overflow-y: scroll;
     }
+
     .bot {
       margin-left: 50px;
     }
     .left {
       padding-right: 50px;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 99.5%;
+      z-index: 1;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    #gala {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 15px;
+    }
+    #gala > div {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      height: 350px;
+      align-items: center;
+      border-radius: 10px;
+      padding-top: 5px;
+      text-align: center;
+    }
+    #gala > div > button {
+      height: 30px;
+      width: 90px;
+      cursor: pointer;
+      background-color: rgb(7, 104, 248);
+      color: white;
+      border-radius: 4px;
+      border: 0;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+    #gala > div > img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    #gala > div > p {
+      text-align: left;
+      font-size: 14px;
     }
   </style>
   <body>
@@ -121,7 +176,12 @@
       <!-- navbar -->
       <div id="navbar">
         <div>
-          <img width="60px" src="" />
+          <img
+            style="padding-left: 15px; border: 0"
+            height="60%"
+            width="8%"
+            src=" data:image/png;base64,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"
+          />
           <h5 style="font-size: 25px">Airtable</h5>
           <h5>Product ></h5>
           <h5>Solution ></h5>
@@ -145,9 +205,10 @@
               font-size: medium;
               font-weight: bold;
               background-color: rgb(8, 43, 42);
+              text-decoration: none;
             "
           >
-            Sign out
+            <a href="index.html"> Home</a>
           </button>
         </div>
       </div>
@@ -157,7 +218,11 @@
     <div class="bottom">
       <div class="bot">
         <div class="bott1">
-          <button class="btn"><i class="fa fa-home"></i></button>
+          <button class="btn">
+            <a href="index.html">
+              <i class="fa fa-home"></i>
+            </a>
+          </button>
           <input type="text" placeholder="search" />
         </div>
 
@@ -187,14 +252,145 @@
       </div>
 
       <div class="left">
-        <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/image1.png" />
-      </div>
-      <div class="left1">
-        <h3>Content production &#8594
-        </h3>
-        <img src=""/>
-        <h2></h2>
-        <p></p>
+        <div>
+          <img
+            width="100%"
+            src="file:///C:/Users/fahee/OneDrive/Desktop/img/image1.png"
+          />
+        </div>
+
+        <div id="gala">
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a1.png" />
+            <h2>Digital Video Production</h2>
+            <p>
+              Video production can seem daunting at first, but the key to any
+              complicated, collaborative project is organization.
+            </p>
+            <button style="margin-top: 19px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a2.png" />
+            <h2>Social Media Calendar</h2>
+            <p>
+              World-class social media teams move fast. Part content calendar,
+              part culture calendar, this social template helps you wrangle the
+              unwrangle-able by showca
+            </p>
+            <button>see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a3.png" />
+            <h2>Blog Editorial Calendar</h2>
+            <p>
+              Even the most battle-hardened editorial team needs a plan of
+              attack. And that plan is called an editorial calendar. It's a
+              crucial
+            </p>
+            <button style="margin-top: 22px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a4.png" />
+            <h2>Indie Film Production</h2>
+            <p>
+              Manage every step from script to screen! You can use this template
+              to plan out scenes, shots, props and actors for your next film
+              project.
+            </p>
+            <button>see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a5.png" />
+            <h2>Novel Planning</h2>
+            <p>
+              When it's time to channel your inner Tolkien, use this novel
+              writing template to build and remember every detail of your
+              invented world.
+            </p>
+            <button style="margin-top: 18px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a6.png" />
+            <h2>Art Gallery Management</h2>
+            <p>
+              Whether you are an art gallery manager or a museum curator, you
+              need the ability to test how different combinations of pieces work
+              together
+            </p>
+            <button>see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a7.png" />
+            <h2>Event Planning</h2>
+            <p>
+              Everyone is an event planner, even when said planning may be as
+              simple as a weeknight dinner. For events with many moving parts,
+              you need
+            </p>
+            <button>see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a8.png" />
+            <h2>Event marketing</h2>
+            <p>
+              Hosting events is one of the best ways to engage customers. Use
+              this template to plan meetups, dinners, webinars, and more, and to
+              track which
+            </p>
+            <button style="margin-top: 4px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a9.png" />
+            <h2>Nonprofit Gala</h2>
+            <p>
+              Venues, schedules, speakers—there's a lot that goes in to pulling
+              off a successful event. This template will help keep everything
+              org
+            </p>
+            <button style="margin-top: 15px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a10.png" />
+            <h2>Restaurant Field</h2>
+            <p>
+              Guide For the foodie, an easy way to organize restaurants and
+              reservations. List the restaurants you'd like to visit, and jot
+              down your
+            </p>
+            <button style="margin-top: 5px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a11.png" />
+            <h2>Pet Medical History</h2>
+            <p>
+              Whether you identify as a cat person, or a dog person, or a guinea
+              pig or snake person, remembering vet visits, medications and bills
+              medical history
+            </p>
+            <button style="margin-top: 10px">see more</button>
+          </div>
+
+          <div>
+            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a12.png" />
+            <h2>Apartment Hunting</h2>
+            <p>
+              Apartment hunting is stressful, with so many budgets, details, and
+              and amenities to track. Parking or no parking? What was that exact
+              s anenities
+            </p>
+            <button style="margin-top: 6px">see more</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
