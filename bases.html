@@ -13,6 +13,10 @@
   <style>
     * {
       font-family: sans-serif;
+
+      position: sticky;
+      /* top: 0;
+      display: block; */
     }
     #navbar {
       height: 80px;
@@ -22,6 +26,7 @@
       align-items: center;
       background-color: white;
       color: black;
+      width: auto;
       font-family: sans-serif;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -87,6 +92,9 @@
       display: flex;
       justify-content: space-evenly;
       /* flex-direction: column; */
+
+      position: -webkit-sticky;
+      top: 0;
     }
     .bott1 {
       margin-bottom: 10px;
@@ -170,6 +178,15 @@
       text-align: left;
       font-size: 14px;
     }
+    .scroll {
+      overflow: 10px;
+      font-size: 14px;
+      z-index: 1;
+
+      top: 0;
+      display: block;
+      overflow-y: hidden;
+    }
   </style>
   <body>
     <header class="header sticky">
@@ -250,145 +267,146 @@
           <p>Software Development</p>
         </div>
       </div>
-
-      <div class="left">
-        <div>
-          <img
-            width="100%"
-            src="file:///C:/Users/fahee/OneDrive/Desktop/img/image1.png"
-          />
-        </div>
-
-        <div id="gala">
+      <div class="scroll">
+        <div class="left">
           <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a1.png" />
-            <h2>Digital Video Production</h2>
-            <p>
-              Video production can seem daunting at first, but the key to any
-              complicated, collaborative project is organization.
-            </p>
-            <button style="margin-top: 19px">see more</button>
+            <img
+              width="100%"
+              src="file:///C:/Users/fahee/OneDrive/Desktop/img/image1.png"
+            />
           </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a2.png" />
-            <h2>Social Media Calendar</h2>
-            <p>
-              World-class social media teams move fast. Part content calendar,
-              part culture calendar, this social template helps you wrangle the
-              unwrangle-able by showca
-            </p>
-            <button>see more</button>
-          </div>
+          <div id="gala">
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a1.png" />
+              <h2>Digital Video Production</h2>
+              <p>
+                Video production can seem daunting at first, but the key to any
+                complicated, collaborative project is organization.
+              </p>
+              <button style="margin-top: 19px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a3.png" />
-            <h2>Blog Editorial Calendar</h2>
-            <p>
-              Even the most battle-hardened editorial team needs a plan of
-              attack. And that plan is called an editorial calendar. It's a
-              crucial
-            </p>
-            <button style="margin-top: 22px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a2.png" />
+              <h2>Social Media Calendar</h2>
+              <p>
+                World-class social media teams move fast. Part content calendar,
+                part culture calendar, this social template helps you wrangle
+                the unwrangle-able by showca
+              </p>
+              <button>see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a4.png" />
-            <h2>Indie Film Production</h2>
-            <p>
-              Manage every step from script to screen! You can use this template
-              to plan out scenes, shots, props and actors for your next film
-              project.
-            </p>
-            <button>see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a3.png" />
+              <h2>Blog Editorial Calendar</h2>
+              <p>
+                Even the most battle-hardened editorial team needs a plan of
+                attack. And that plan is called an editorial calendar. It's a
+                crucial
+              </p>
+              <button style="margin-top: 22px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a5.png" />
-            <h2>Novel Planning</h2>
-            <p>
-              When it's time to channel your inner Tolkien, use this novel
-              writing template to build and remember every detail of your
-              invented world.
-            </p>
-            <button style="margin-top: 18px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a4.png" />
+              <h2>Indie Film Production</h2>
+              <p>
+                Manage every step from script to screen! You can use this
+                template to plan out scenes, shots, props and actors for your
+                next film project.
+              </p>
+              <button>see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a6.png" />
-            <h2>Art Gallery Management</h2>
-            <p>
-              Whether you are an art gallery manager or a museum curator, you
-              need the ability to test how different combinations of pieces work
-              together
-            </p>
-            <button>see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a5.png" />
+              <h2>Novel Planning</h2>
+              <p>
+                When it's time to channel your inner Tolkien, use this novel
+                writing template to build and remember every detail of your
+                invented world.
+              </p>
+              <button style="margin-top: 18px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a7.png" />
-            <h2>Event Planning</h2>
-            <p>
-              Everyone is an event planner, even when said planning may be as
-              simple as a weeknight dinner. For events with many moving parts,
-              you need
-            </p>
-            <button>see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a6.png" />
+              <h2>Art Gallery Management</h2>
+              <p>
+                Whether you are an art gallery manager or a museum curator, you
+                need the ability to test how different combinations of pieces
+                work together
+              </p>
+              <button>see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a8.png" />
-            <h2>Event marketing</h2>
-            <p>
-              Hosting events is one of the best ways to engage customers. Use
-              this template to plan meetups, dinners, webinars, and more, and to
-              track which
-            </p>
-            <button style="margin-top: 4px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a7.png" />
+              <h2>Event Planning</h2>
+              <p>
+                Everyone is an event planner, even when said planning may be as
+                simple as a weeknight dinner. For events with many moving parts,
+                you need
+              </p>
+              <button>see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a9.png" />
-            <h2>Nonprofit Gala</h2>
-            <p>
-              Venues, schedules, speakers—there's a lot that goes in to pulling
-              off a successful event. This template will help keep everything
-              org
-            </p>
-            <button style="margin-top: 15px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a8.png" />
+              <h2>Event marketing</h2>
+              <p>
+                Hosting events is one of the best ways to engage customers. Use
+                this template to plan meetups, dinners, webinars, and more, and
+                to track which
+              </p>
+              <button style="margin-top: 4px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a10.png" />
-            <h2>Restaurant Field</h2>
-            <p>
-              Guide For the foodie, an easy way to organize restaurants and
-              reservations. List the restaurants you'd like to visit, and jot
-              down your
-            </p>
-            <button style="margin-top: 5px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a9.png" />
+              <h2>Nonprofit Gala</h2>
+              <p>
+                Venues, schedules, speakers—there's a lot that goes in to
+                pulling off a successful event. This template will help keep
+                everything org
+              </p>
+              <button style="margin-top: 15px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a11.png" />
-            <h2>Pet Medical History</h2>
-            <p>
-              Whether you identify as a cat person, or a dog person, or a guinea
-              pig or snake person, remembering vet visits, medications and bills
-              medical history
-            </p>
-            <button style="margin-top: 10px">see more</button>
-          </div>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a10.png" />
+              <h2>Restaurant Field</h2>
+              <p>
+                Guide For the foodie, an easy way to organize restaurants and
+                reservations. List the restaurants you'd like to visit, and jot
+                down your
+              </p>
+              <button style="margin-top: 5px">see more</button>
+            </div>
 
-          <div>
-            <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a12.png" />
-            <h2>Apartment Hunting</h2>
-            <p>
-              Apartment hunting is stressful, with so many budgets, details, and
-              and amenities to track. Parking or no parking? What was that exact
-              s anenities
-            </p>
-            <button style="margin-top: 6px">see more</button>
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a11.png" />
+              <h2>Pet Medical History</h2>
+              <p>
+                Whether you identify as a cat person, or a dog person, or a
+                guinea pig or snake person, remembering vet visits, medications
+                and bills medical history
+              </p>
+              <button style="margin-top: 10px">see more</button>
+            </div>
+
+            <div>
+              <img src="file:///C:/Users/fahee/OneDrive/Desktop/img/a12.png" />
+              <h2>Apartment Hunting</h2>
+              <p>
+                Apartment hunting is stressful, with so many budgets, details,
+                and and amenities to track. Parking or no parking? What was that
+                exact s anenities
+              </p>
+              <button style="margin-top: 6px">see more</button>
+            </div>
           </div>
         </div>
       </div>
